@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quizSection">
+            <div class="header">
+                <h2>JavaScript Quiz Challenge</h2>
+                <div class="timer-box" id="timerDisplay">Time Left: <span id="timeValue">15</span>s</div>
+            </div>
+            
+            <div class="question-section">
+                <div class="question-text" id="questionDisplay"></div>
+                <div class="answer-list" id="answerList"></div>
+            </div>
+            
+            <button class="btn-next" id="nextButton" onclick="moveToNext()" disabled>Next Question</button>
+        </div>
+
+        <div id="resultSection" class="result-section hide">
+            <h2>Quiz Completed!mn</h2>
+            <div class="score-display" id="finalScore"></div>
+            <div class="result-text" id="feedbackText"></div>
+            <button class="btn-restart" onclick="startAgain()">Try Again</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
